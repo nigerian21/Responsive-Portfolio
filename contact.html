@@ -1,56 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <title>Efe Owolide's contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <header id="masthead">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-bg-light navbar-fixed-top">
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html" id="logo"><h1>Efe Owolide</h1></a>
+      </div>
+      <button class="navbar-toggler collapsed ml-auto" data-toggle="collapse" data-target="#page-nav-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="page-nav-collapse">
+        <ul class="nav navbar-nav ml-auto">
           <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+            <a class="nav-link" href="index.html">About</a>
           </li>
           <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
           <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
-        <input type="submit">
-      </form>
-
-    </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
+      </div>
+      
     </div>
+    
+  </nav>
+  
+  <main class="container">
+    <section class="row">
+      <div class="col">
+        <form class="block form-horizontal">
+          <h2 class="block-header">Contact</h2>
+          <hr />
+          <div class="form-group">
+            <label for="name" class="col control-label">Name</label>
+            <div class="col">
+              <input type="email" class="form-control" id="name" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col control-label">Email</label>
+            <div class="col">
+              <input type="password" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col control-label" for="msg">Message</label>
+            <div class="col">
+              <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="col">
+          <button class="btn btn-primary">Submit</button></div>
+        </form>
+      </div>
+    </section>
+    <br>
+    <div class="row">
+        <h4 class="col">Head to my Profiles!</h4>
+        <br>
+    </div>
+        <a class="row" href="https://www.linkedin.com/in/efe-owolide-2bb207153/">LinkedIn</a>
+        <a class="row" href="https://github.com/nigerian21">GitHub</a>
+  </main>
+  
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright Efe Owolide 2018
+    </p>
   </footer>
+  <!-- End of footer -->
+
 </body>
 
 </html>
